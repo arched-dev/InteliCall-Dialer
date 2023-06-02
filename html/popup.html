@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <style>
+      html, body {
+        width: 400px;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+      }
+      .saved{
+        transition: 0.5s;
+        opacity: 0;
+      }
+    </style>
+  <body style="background-color: #F7F7F7; font-family: Arial, sans-serif; padding: 10px;">
+    <h1 style="font-size: 18px; color: #333;">Set IntelliCall Phone API Link</h1>
+    <p>Adjusts any telephone number links to dial straight from your IntelliCall phone</p>
+    <p>You will need to add your phones API link in here, found in the IntelliCall portal, under your extension.</p>
+    <p></p>
+    <input placeholder="phone api call url" id="url" type="text" style="padding: 10px; border: none; border-radius: 5px; width: 70%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <button id="save" style="margin-left: 10px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Save</button>
+    <p id="saved" class="saved">Saved...</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
+
