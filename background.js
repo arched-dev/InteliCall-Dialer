@@ -1,3 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({url: null});
+  chrome.storage.sync.get(['url'], function (result) {
+    if (!result.url) {
+      chrome.storage.sync.set({url: null});
+    }
+  });
 });
